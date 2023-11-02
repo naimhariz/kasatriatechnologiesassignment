@@ -31,7 +31,6 @@ jobs:
     steps:
       - name: Vite Github Pages Deployer
         uses: skywarth/vite-github-pages-deployer@master
-        id: deploy_to_pages
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
