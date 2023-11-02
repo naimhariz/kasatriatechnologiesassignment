@@ -1,4 +1,13 @@
 {
+  "name": "kasatria-technologies-assigment",
+  "homepage": "https://naimhariz.github.io/kasatriatechnologiesassignment",
+  "private": true,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
   "dependencies": {
     "@types/three": "^0.158.1",
     "google-spreadsheet": "^4.1.0",
