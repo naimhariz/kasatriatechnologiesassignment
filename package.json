@@ -5,12 +5,13 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "start": "vite start",
+    "build": "vite build"
   },
   "dependencies": {
     "@types/three": "^0.158.1",
     "google-spreadsheet": "^4.1.0",
+    "react-scripts": "^5.0.1",
     "three": "^0.158.0"
   },
   "devDependencies": {
