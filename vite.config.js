@@ -7,7 +7,10 @@ module.exports = defineConfig({
       input: {
         main: './index.html',
         table: './table.html',
-        sheetpreview: './sheetpreview.html',
+        app: './src/app.js',
+        app: './src/logout.js',
+        app: './src/main.js',
+        app: './src/sheet.js'
       }
     }
   }
