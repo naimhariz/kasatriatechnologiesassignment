@@ -6,7 +6,7 @@ module.exports = defineConfig({
       input: {
         main: './index.html',
         table: './table.html',
-        sheetpreview: './sheetpreview.html'
+        sheetpreview: './sheetpreview.html',
       }
     }
   }
