@@ -2,6 +2,7 @@ const { defineConfig } = require('vite')
 
 module.exports = defineConfig({
   build: {
+    base: 'https://naimhariz.github.io/kasatriatechnologiesassignment/dist/',
     rollupOptions: {
       input: {
         main: './index.html',
@@ -9,6 +10,5 @@ module.exports = defineConfig({
         sheetpreview: './sheetpreview.html',
       }
     }
-  },
-  base: 'https://naimhariz.github.io/kasatriatechnologiesassignment/dist/'
+  }
 })
