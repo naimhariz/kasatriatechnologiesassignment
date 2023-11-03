@@ -9,5 +9,6 @@ module.exports = defineConfig({
         sheetpreview: './sheetpreview.html',
       }
     }
-  }
+  },
+  base: 'https://naimhariz.github.io/kasatriatechnologiesassignment/dist/'
 })
