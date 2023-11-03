@@ -6,11 +6,7 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        table: './table.html',
-        app: './src/app.js',
-        app: './src/logout.js',
-        app: './src/main.js',
-        app: './src/sheet.js'
+        table: './table.html'
       }
     }
   }
