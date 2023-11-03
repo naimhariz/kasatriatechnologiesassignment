@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="https://naimhariz.github.io/src/main.css">
+		<title>Kasatria Assignment</title>
+        <style>
+			a {
+				color: #8ff;
+			}
+
+			#menu {
+				position: absolute;
+				bottom: 20px;
+				width: 100%;
+				text-align: center;
+			}
+
+			.element {
+				width: 120px;
+				height: 160px;
+				box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+				border: 1px solid rgba(127,255,255,0.25);
+				font-family: Helvetica, sans-serif;
+				text-align: center;
+				line-height: normal;
+				cursor: default;
+			}
+
+			.element:hover {
+				box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
+				border: 1px solid rgba(127,255,255,0.75);
+			}
+            .element .country {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                font-size: 7px;
+                color: rgba(255, 255, 255, 0.75);
+            }
+
+            .element .age {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                font-size: 7px;
+                color: rgba(255, 255, 255, 0.75);
+            }
+
+            .element .symbol {
+                position: absolute;
+                top: 24px;
+                bottom: 12px;
+                left: 12px;
+                right: 12px;
+            }
+
+            .element .symbol .image{
+                pointer-events: none;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                max-width:100%;
+                max-height:100%;
+            }
+
+            .element .details {
+                position: absolute;
+                bottom: 10px;
+                left: 0px;
+                right: 0px;
+                font-size: 8px;
+                font-weight: bold;
+                color: rgba(255, 255, 255, 0.75);
+            }
+            span{
+                
+                font-weight: normal;
+                font-size: 6px;
+            }
+
+			button {
+				color: rgba(127,255,255,0.75);
+				background: transparent;
+				outline: 1px solid rgba(127,255,255,0.75);
+				border: 0px;
+				padding: 5px 10px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: rgba(0,255,255,0.5);
+			}
+
+			button:active {
+				color: #000000;
+				background-color: rgba(0,255,255,0.75);
+			}
+		</style>
+	</head>
+	<body>
+        <div id="container"></div>
+		<div id="menu">
+			<button id="table">TABLE</button>
+			<button id="sphere">SPHERE</button>
+			<button id="helix">HELIX</button>
+			<button id="grid">GRID</button>
+			<button id="signout_btn" type="button" onclick="GAuthSignout()">SIGN OUT</button>
+		</div>
+        <script>
+            // Sign out the user
+            function signOut(authID) {
+                document.getElementsByClassName("pro-data")[0].innerHTML = '';
+                document.querySelector("#btnWrap").classList.remove("hidden");
+                document.querySelector(".pro-data").classList.add("hidden");
+            }    
+        </script>
+        <script async defer src="https://apis.google.com/js/api.js" onload="handleClientLoad()"></script>
+		<script type="module" src="https://naimhariz.github.io/src/main.js"></script>
+        <script type="module" src="https://naimhariz.github.io/src/sheet.js"></script>
+        <script type="text/javascript" src="https://naimhariz.github.io/src/logout.js"></script>
+	</body>
+</html>
